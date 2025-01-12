@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                 // Уровень JavaScript, в который компилируется TypeScript
+    "module": "CommonJS",            // Система модулей (например, Node.js)
+    "strict": true,                  // Включает строгий режим
+    "esModuleInterop": true,         // Упрощает импорт CommonJS модулей
+    "skipLibCheck": true,            // Пропускает проверку типов в библиотеках
+    "forceConsistentCasingInFileNames": true // Проверяет регистр в путях
+  },
+  "include": ["src/**/*"],          // Файлы для компиляции
+  "exclude": ["node_modules"]       // Файлы и папки, которые нужно исключить
+}
