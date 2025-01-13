@@ -5,9 +5,9 @@ const tick = (time: number) => {
 }
 
 //code start
-const debounce = (callback, delay) => {
-    let timerId
-    return function (...args) {
+const debounce = <T extends (...args: any[]) => void>(callback: T, delay: number):  (...args: Parameters<T>) => void => {
+    let timerId: ReturnType<typeof setTimeout> | undefined
+    return function (...args: Parameters<T>): void {
         if (timerId) {
             clearTimeout(timerId)
         }
@@ -18,7 +18,7 @@ const debounce = (callback, delay) => {
 }
 //code end
 
-const fn = (number) => {
+const fn = (number: number): void => {
     console.log(number)
 }
 
