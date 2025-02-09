@@ -20,4 +20,4 @@ const Component = ({auth, title}) => {
 
 const ComponentWithAuth = HOC(Component)
 
- //   <ComponentWithAuth title= {'sas'} />
+//   <ComponentWithAuth title= {'sas'} />

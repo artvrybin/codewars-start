@@ -5,7 +5,7 @@ const tick = (time: number) => {
 }
 
 //code start
-const debounce = <T extends (...args: any[]) => void>(callback: T, delay: number):  (...args: Parameters<T>) => void => {
+const debounce = <T extends (...args: any[]) => void>(callback: T, delay: number): (...args: Parameters<T>) => void => {
     let timerId: ReturnType<typeof setTimeout> | undefined
     return function (...args: Parameters<T>): void {
         if (timerId) {

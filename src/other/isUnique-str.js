@@ -8,18 +8,35 @@
 
 //Э тот вариант использует обычный объект для хранения информации о том, встречался ли уже символ.
 
-const isUnique = (str) => {
-    let charMap = {}
+// const isUnique = (str) => {
+//     let charMap = {}
+//     for (let char of str) {
+//         if (charMap[char])  {
+//             return false
+//         }
+//         charMap[char] = true
+//     }
+//     return true
+// }
+//
+// console.log(isUnique('asdASD')) // true
+// console.log(isUnique('')) // true
+// console.log(isUnique('1234567890')) // true
+// console.log(isUnique('asad')) // false
+
+// -------------------------------------------------------------
+
+const removeDupes = (str) => {
+    let uniqueChars = [];
     for (let char of str) {
-        if (charMap[char])  {
-            return false
+        if (!uniqueChars.includes(char)) {
+            uniqueChars.push(char);
         }
-        charMap[char] = true
     }
-    return true
+    return uniqueChars.join('');
 }
 
-console.log(isUnique('asdASD')) // true
-console.log(isUnique('')) // true
-console.log(isUnique('1234567890')) // true
-console.log(isUnique('asad')) // false
+console.log(removeDupes('asdasd')) //asd
+console.log(removeDupes('')) //''
+console.log(removeDupes('zxcZXC')) //zxcZXC
+console.log(removeDupes('asd1111111asd')) //asd1

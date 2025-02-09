@@ -14,3 +14,19 @@ async function foo2() {
 }
 
 foo2()
+
+
+ // ---------------------------------------
+
+async function ex1() {
+    console.log('5')
+
+    const promise = new Promise ((resolve) => {
+        console.log('1')
+        resolve('2')
+    })
+    console.log('6')
+    console.log(await promise)
+    console.log('3')
+}
+ex1()
