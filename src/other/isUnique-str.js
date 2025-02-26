@@ -26,6 +26,22 @@
 
 // -------------------------------------------------------------
 
+// const removeDupes = (str) => {
+//     let uniqueChars = {};
+//     let result = '';
+//     for (let char of str) {
+//         if (!uniqueChars[char]) {
+//             uniqueChars[char] = true;
+//             result += char
+//         }
+//     }
+//     return result
+// } // Доступ к свойству объекта осуществляется за O(1), что быстрее, чем метод includes() у массива, который работает за O(n).
+
+// const removeDupes = (str) => {
+//     return Array.from( new Set(str)).join('')
+// }
+
 const removeDupes = (str) => {
     let uniqueChars = [];
     for (let char of str) {
