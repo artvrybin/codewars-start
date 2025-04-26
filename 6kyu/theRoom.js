@@ -1,13 +1,19 @@
 function dramameter(room) {
-  const peopleMap = {};
-  const scores = {};
+  // const peopleMap = {};
+  // const scores = {};
 
   // Собираем мапу и инициализируем счёт
-  room.forEach(person => {
-    const [name, partner, friends, lovers] = person;
-    peopleMap[name] = { partner, friends, lovers };
+  // room.forEach(person => {
+  //   const [name, partner, friends, lovers] = person;
+  //   peopleMap[name] = { partner, friends, lovers };
+  //   scores[name] = 0;
+  // });
+
+  const [peopleMap, scores]  = room.reduce(([map, scores], [name, partner, friends, lovers])=> {
+    map[name] = { partner, friends, lovers };
     scores[name] = 0;
-  });
+    return [map, scores];
+  }, [{},{}])
 
   for (const name in peopleMap) {
     const { partner, friends, lovers } = peopleMap[name];
