@@ -8,5 +8,12 @@
   "bracketSpacing": true,
   "arrowParens": "always",
   "proseWrap": "always",
-  "endOfLine": "lf"
+  "endOfLine": "lf",
+  "plugins": ["prettier-plugin-jsdoc"],
+  "jsdocPrintWidth": 80,
+  "jsdocSpaces": 1,
+  "jsdocDescriptionWithDot": false,
+  "jsdocVerticalAlignment": false,
+  "jsdocCapitalizeDescription": true,
+  "jsdocCommentLineStrategy ": "multiline"
 }
