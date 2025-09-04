@@ -1,9 +1,8 @@
 /.idea/
-/node_modules/
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+node_modules/
 /.pnp
 .pnp.js
 
@@ -13,6 +12,9 @@
 # production
 /build
 
+# TypeScript
+*.tsbuildinfo
+
 # misc
 .DS_Store
 .env.local
@@ -20,6 +22,20 @@
 .env.test.local
 .env.production.local
 
+# logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+
+# runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Editor directories and files
+.vscode/
+*.swp
+*.swo
+*~
