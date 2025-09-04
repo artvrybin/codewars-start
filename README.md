@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# 🚀 Codewars Start
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Образовательный проект с решениями задач Codewars и примерами React приложений.
 
-## Available Scripts
+## 📁 Структура проекта
 
-In the project directory, you can run:
+```
+📦 codewars-start/
+├── 📁 learning/                   # 🎓 Образовательные материалы
+│   ├── 📁 codewars/              # Задачи Codewars (8kyu, 7kyu, 6kyu)
+│   ├── 📁 algorithms/            # Алгоритмы и структуры данных
+│   ├── 📁 solid-examples/        # Принципы SOLID
+│   ├── 📁 async-patterns/        # Асинхронные паттерны
+│   └── 📁 js-concepts/           # Концепции JavaScript
+├── 📁 react-app/                 # ⚛️ React приложение
+│   ├── 📁 public/
+│   ├── 📁 src/
+│   └── package.json
+├── package.json                  # 🏠 Workspace конфигурация
+└── pnpm-workspace.yaml          # 🔧 PNPM Workspace
+```
 
-### `npm start`
+## 🛠 Установка и запуск
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Установка зависимостей
+```bash
+pnpm install
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Запуск React приложения
+```bash
+# Из корня проекта
+pnpm dev:react
 
-### `npm test`
+# Или из папки react-app
+cd react-app
+pnpm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Другие команды
+```bash
+pnpm build:react      # Сборка React приложения
+pnpm test:react       # Тесты React приложения
+pnpm install:all      # Установка всех зависимостей
+```
 
-### `npm run build`
+## 🎯 Цели проекта
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 📚 **Обучение** - решение алгоритмических задач
+- 🏗 **Практика** - применение принципов SOLID
+- ⚛️ **React** - современные паттерны и хуки
+- 🔄 **Асинхронность** - работа с Promise, debounce
+- 📝 **TypeScript** - типизация и лучшие практики
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🔧 Технологии
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **JavaScript/TypeScript**
+- **React 19** + Hooks
+- **PNPM** Workspaces
+- **Create React App**
+- **Prettier** для форматирования
 
-### `npm run eject`
+## 📖 Документация
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Подробную информацию по каждой секции смотрите в соответствующих README:
+- [Learning Materials](./learning/README.md)
+- [React App](./react-app/README.md)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*Проект создан для изучения современных практик JavaScript/TypeScript разработки*
