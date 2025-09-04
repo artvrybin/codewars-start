@@ -1,0 +1,20 @@
+{
+  "name": "learning",
+  "version": "0.1.0",
+  "description": "Educational JavaScript/TypeScript examples and solutions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0",
+    "dev": "ts-node",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": ["codewars", "algorithms", "solid", "javascript", "typescript"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "@types/node": "^20.0.0",
+    "@types/react": "^19.0.0"
+  }
+}
